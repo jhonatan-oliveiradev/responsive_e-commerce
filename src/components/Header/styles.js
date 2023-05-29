@@ -21,7 +21,7 @@ export const Container = styled.header`
 			width: 230px;
 
 			@media (max-width: 500px) {
-				width: 7.5rem;
+				width: 120px;
 			}
 		}
 
@@ -51,9 +51,15 @@ export const Container = styled.header`
 				}
 			}
 		}
+		.mobile {
+			display: none;
+		}
 
 		@media (max-width: 900px) {
-			nav {
+			.mobile {
+				display: initial;
+			}
+			> nav {
 				display: none;
 			}
 		}
